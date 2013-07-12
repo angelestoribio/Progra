@@ -1,0 +1,28 @@
+// Area de un cuadrado.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+#include "stdio.h"
+#include "conio.h"
+
+
+void main()
+{
+  float lado,area;
+	printf("CALCULO DEL AREA DE UN CUADRADO\n");
+	printf("=============================\n");
+	printf("\nIngrese el tamaño del lado:");
+	scanf("%f",&lado);
+	
+	if(lado>0)
+	{
+	area=(lado*lado);
+	printf("\n\nREPUESTA: El area del cuadrado es %5.2f",area);
+	}
+	else
+	{
+		printf("\t\n**ERROR, no se admite numeros negativos**");
+	}
+	getch();
+}
