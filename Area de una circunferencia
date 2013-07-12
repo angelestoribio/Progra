@@ -1,0 +1,30 @@
+// Area de una circunferencia.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main()
+{
+  float radio,area,pi;
+	printf("CALCULO DEL AREA DE UNA CIRCUNFERENCIA\n");
+	printf("=============================\n");
+	printf("\nIngrese el tamaño del radio:");
+	scanf("%f",&radio);
+	
+	if(radio>0)
+	{
+	  pi=3.141516;
+
+	  area=pi*(radio*radio);
+	  printf("\n\nREPUESTA: El area del la Circunferecia es %5.2f",area);
+	}
+	else
+	{
+		printf("\t\n**ERROR, no se admite numeros negativos**");
+	}
+	getch();
+}
