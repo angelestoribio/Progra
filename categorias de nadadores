@@ -1,37 +1,54 @@
 #include "stdafx.h"
 #include <stdio.h>
 #include <conio.h>
-void main ()
-{int edad;
 
-   printf("\t***CATEGORIAS***\n");
-   
-   printf("\n\nIngrese la edad:");
-   scanf("%d",&edad);
-   
-    if(edad>=5 && edad<=7)
-    {printf("\n**CATEGORIA INFANTIL A**");
-	   }
-	   else 
-	   {if(edad>=8 && edad<=10)
-	    {printf("\n**CATEGORIA INFANTIL B**");
-	     }
-	     else
-		 {if(edad>=11 && edad<=13)
-	       {printf("\n**CATEGORIA JUVENIL A**");
-	        }
-	       else
-		    {if(edad>=14 && edad<=17)
-	         {printf("\n**CATEGORIA JUVENIL B**");
-	          }
-	          else
-		       {if(edad>=18 && edad<=60)
-	            {printf("\n**CATEGORIA ADULTO**");
-	             }
-	        
-	           } 
-	        } 
-	      }
-	   }
-	getch(); 
+void main()
+{int edad,continuar;
+ 
+ printf("\t*****CATEGORIAS DE NADADORES******\n");
+do
+{
+	printf("\n\t =========================== ");
+	printf(" \n\nCOLOQUE LA EDAD DEL NADADOR:");
+ scanf("%d",&edad);
+ 
+  if ((edad >= 5) && (edad <= 1))
+  {printf("\n\n\t ***CATEGORIA INFANTIL A *** ");
+  printf("\n\t =========================== ");
+  }
+  else
+  {  if((edad >= 8) && (edad <= 10))
+     {printf("\n\n\t ***CATEGORIA INFANTIL B *** ");
+      printf("\n\t =========================== ");
+     }
+    else
+	{  if((edad >= 11) && (edad <= 13))
+       {printf("\n\n\t ***CATEGORIA JUVENIL A *** ");
+        printf("\n\t =========================== ");
+       }
+	   else
+	   {  if((edad >= 14) && (edad <= 17))
+          {printf("\n\n\t ***CATEGORIA JUVENIL B *** ");
+           printf("\n\t =========================== ");
+          }
+	      else
+		  { if((edad >= 18) && (edad <= 60))
+            {printf("\n\n\t ***CATEGORIA ADULTO *** ");
+             printf("\n\t =========================== ");
+            }
+		    else
+			{  if(edad >= 61)
+               {printf("\n\n\t ***CATEGORIA SENIOR *** ");
+                printf("\n\t =========================== ");
+                }
+             }
+          }
+       }
+     }
+  }
+  printf("\n\n PARA SACAR OTRA CATEGORIA PRECIONE 1");
+  scanf("%d",&continuar);
+}while(continuar==1);
+	getch();
 }
+
