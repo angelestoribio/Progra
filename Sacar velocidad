@@ -1,0 +1,24 @@
+#include "stdafx.h"
+#include <stdio.h>
+#include <conio.h>
+
+void main()
+{float distancia,tiempo,velocidad,continuar;
+ printf("\t****VELOCIDAD****");
+  do
+  {printf("\n\nINGRESAR EL TIEMPO DEL RECORRIDO:");
+     scanf("%f",&tiempo);
+     printf("\nINGRESAR EL DISTANCIA DEL RECORRIDO:");
+     scanf("%f",&distancia);
+    if(tiempo>=0 && distancia>=0)
+	  {velocidad=distancia/tiempo;
+	   printf("\n\tLa velociadad es %f",velocidad);
+	  }
+	  else
+	  {printf("ERROR");
+	  }
+	  printf("\n\nPara Continuar Precione 1");
+	  scanf("%f",&continuar);
+   }while(continuar==1);
+	getch();
+}
