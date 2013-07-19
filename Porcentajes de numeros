@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include <stdio.h>
+#include <conio.h>
+
+void main()
+{float a,b,c,suma,proa,prob,proc,continuar;
+ printf("\t********Procentaje**********");
+  do
+  {printf("\n\nIngrese 3 numeros:");
+   scanf("%f" "%f" "%f", &a,&b,&c);
+    if((a>=0)&(b>=0)&(c>=0))
+  {suma=a+b+c;
+	 proa=(a/suma)*100;
+     prob=(b/suma)*100;
+	 proc=(c/suma)*100;
+	 printf("\n\n\t LOS PORCENTAJES DE LOS NUMEROS SON \n****\t%f - %f \n\t%f - %f \n\t%f - %f****",a,proa,b,prob,c,proc);
+	}
+	else
+	{printf("ERROR, no se aceptan negativos");
+	}
+
+	  printf("\n\nDesea Ingresar Otros Numeros Precione 1:");
+	  scanf("%f",continuar);
+	  printf("==============================================");
+  }while(continuar==1);
+
+  getch();
+}
