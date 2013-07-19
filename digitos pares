@@ -1,0 +1,26 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+
+
+void main()
+{int numero, i, digito, aux;
+printf("\n***DIGITOS PARES***\n");
+i=0;
+do
+{printf("\n\nEscriba un numero natural: ");
+  scanf("%d", &numero);
+ }
+while(numero<=0);
+aux=numero;
+while(numero!=0)
+{digito=numero%10;
+ numero=numero/10;
+ if(digito%2==0)
+   {printf("\n%d", digito);
+    i++;
+   }
+}
+printf("\n\nEl numero: %d tiene %d digitos pares\n\n",aux,i);
+getch();
+}
