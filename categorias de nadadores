@@ -1,0 +1,37 @@
+#include "stdafx.h"
+#include <stdio.h>
+#include <conio.h>
+void main ()
+{int edad;
+
+   printf("\t***CATEGORIAS***\n");
+   
+   printf("\n\nIngrese la edad:");
+   scanf("%d",&edad);
+   
+    if(edad>=5 && edad<=7)
+    {printf("\n**CATEGORIA INFANTIL A**");
+	   }
+	   else 
+	   {if(edad>=8 && edad<=10)
+	    {printf("\n**CATEGORIA INFANTIL B**");
+	     }
+	     else
+		 {if(edad>=11 && edad<=13)
+	       {printf("\n**CATEGORIA JUVENIL A**");
+	        }
+	       else
+		    {if(edad>=14 && edad<=17)
+	         {printf("\n**CATEGORIA JUVENIL B**");
+	          }
+	          else
+		       {if(edad>=18 && edad<=60)
+	            {printf("\n**CATEGORIA ADULTO**");
+	             }
+	        
+	           } 
+	        } 
+	      }
+	   }
+	getch(); 
+}
