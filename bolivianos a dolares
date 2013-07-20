@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include <stdio.h>
+#include <conio.h>
+
+void main()
+{int continuar;
+ float monto,tc,sus;
+ printf("\t********DE BOLIVIANOS A DOLARES**********");
+  do
+  {printf("\n\nIngrese el Monto: ");
+     scanf("%f", &monto);
+     printf("\n\nIngrese el Tipo de Cambio: ");
+     scanf("%f", &tc);
+    if((monto>=0) & (tc>=0))
+   {sus=monto/tc;
+	 printf("\n\n\t **** %f ****",sus);
+	 }
+	else
+	 {printf("\n\n ERROR, nose aceptan montos negativos");
+	 }
+
+    printf("\n\nDesea Ingresar Otros Numeros Precione 1:");
+	scanf("%f",continuar);
+	  
+  }while(continuar==1);
+
+  getch();
+}
